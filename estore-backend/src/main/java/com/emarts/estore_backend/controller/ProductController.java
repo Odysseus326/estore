@@ -23,8 +23,8 @@ import com.emarts.estore_backend.model.Product;
 import com.emarts.estore_backend.service.ProductService;
 
 @RestController
-@CrossOrigin  // Enables shairing of data between ports
 @RequestMapping("/api")
+@CrossOrigin  // Enables shairing of data between ports
 public class ProductController {
 
     @Autowired

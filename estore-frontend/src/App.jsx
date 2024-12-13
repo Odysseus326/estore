@@ -10,8 +10,7 @@ import { AppProvider } from "./Context/Context";
 import UpdateProduct from "./components/UpdateProduct";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -39,19 +38,17 @@ function App() {
   return (
     <AppProvider>
       <BrowserRouter>
-        <Navbar onSelectCategory={handleCategorySelect}
-         />
+        <Navbar onSelectCategory={handleCategorySelect} />
         <Routes>
           <Route
             path="/"
             element={
-              <Home addToCart={addToCart} selectedCategory={selectedCategory}
-              />
+              <Home addToCart={addToCart} selectedCategory={selectedCategory} />
             }
           />
           <Route path="/add_product" element={<AddProduct />} />
-          <Route path="/product" element={<Product  />} />
-          <Route path="product/:id" element={<Product  />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="product/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/product/update/:id" element={<UpdateProduct />} />
         </Routes>
