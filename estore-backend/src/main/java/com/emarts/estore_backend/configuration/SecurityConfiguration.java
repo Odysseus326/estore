@@ -34,7 +34,7 @@ public class SecurityConfiguration {
         return http
             .csrf(customizer -> customizer.disable())
             .authorizeHttpRequests(request -> request
-                .requestMatchers("/", "/api", "/api/register", "/api/login", "/api/product", "/api/products", "/api/product/{id}", "/api/product/{productId}/image", "/api/products/search"). permitAll()
+                .requestMatchers("/", "/api", "/api/register", "/api/login", "/api/product", "/api/products", "/api/product/{id}", "/api/product/{productId}/image", "/api/products/search"). permitAll()  // Full access provided for testing purposes
                 .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
