@@ -7,15 +7,19 @@ E-commerce Site!
 
 <p>The listings are highly customizable, allowing you to show the name, brand, price, description, a picture, and more.</p>
 
-![Short showcase of Evan's estore app, highlighting a couple interactive features.](./foodapp-showcase.gif)
+![Short showcase of Evan's estore app, highlighting a couple interactive features.](./estore-frontend-showcase.gif)
 
 <h2>HOW IT WAS MADE</h2>
 <p>This website was built using the React library for the front-end, and Spring Boot w/ MySQL for the back-end. </p>
 
-<p> Evan build the backend entirely utilizing Spring Boot's Web, JPA (MySQL), Security, and Lombok Dependencies, all built with Maven.</p>
+<p> Evan built the backend entirely utilizing Spring Boot's Web, JPA (MySQL), Security, and Lombokdependencies, all built with Maven.</p>
 
 <p>The websites security utilized a basic authentication process (username/password) and a bearer token (JWT) process</p>
 
-<p>The front-end was not built by Evan, however portions of it were changed by him. The front-end uses React (JS) and Bootstrap.
+![Short showcase of Evan's estore app, highlighting a couple interactive features.](./estore-backend-showcase.gif)
+
+![Short showcase of Evan's estore app, highlighting a couple interactive features.](./estore-database-showcase.png)
+
+<p>The front-end was not built by Evan, however portions of it were changed by him, including all bug fixes. The front-end uses React (JS) and Bootstrap.
 
 <p>This completed project mostly serves as a portfolio piece, although Evan and his partner may one day make this project into something they can use.</p>
